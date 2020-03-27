@@ -47,7 +47,21 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\DesignModeCode\StateMde.cs" />
+     <Compile Include="Assets\Scripts\ArchievementSystem\ArchievementSystem.cs" />
+     <Compile Include="Assets\Scripts\BaseClass\IBaseUI.cs" />
+     <Compile Include="Assets\Scripts\BaseClass\IGameSystem.cs" />
+     <Compile Include="Assets\Scripts\CampSystem\CampSystem.cs" />
+     <Compile Include="Assets\Scripts\CharacterSystem\CharacterSystem.cs" />
+     <Compile Include="Assets\Scripts\CharacterSystem\ICharacter.cs" />
+     <Compile Include="Assets\Scripts\EnergySystem\EnergySystem.cs" />
+     <Compile Include="Assets\Scripts\GameEventSystem\GameEventSystem.cs" />
+     <Compile Include="Assets\Scripts\GameFacade.cs" />
      <Compile Include="Assets\Scripts\GameLoop.cs" />
+     <Compile Include="Assets\Scripts\StageSystem\StageSystem.cs" />
+     <Compile Include="Assets\Scripts\UISystem\CampInfoUI.cs" />
+     <Compile Include="Assets\Scripts\UISystem\GamePauseUI.cs" />
+     <Compile Include="Assets\Scripts\UISystem\GameStateInfoUI.cs" />
+     <Compile Include="Assets\Scripts\UISystem\SoldierInfoUI.cs" />
      <Compile Include="Assets\Scripts\sceneState\BattleState.cs" />
      <Compile Include="Assets\Scripts\sceneState\ISceneState.cs" />
      <Compile Include="Assets\Scripts\sceneState\MainMenuState.cs" />
