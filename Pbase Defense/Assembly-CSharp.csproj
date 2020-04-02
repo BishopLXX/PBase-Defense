@@ -46,13 +46,37 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\DesignModeCode\Bridge.cs" />
      <Compile Include="Assets\DesignModeCode\StateMde.cs" />
      <Compile Include="Assets\Scripts\ArchievementSystem\ArchievementSystem.cs" />
      <Compile Include="Assets\Scripts\BaseClass\IBaseUI.cs" />
      <Compile Include="Assets\Scripts\BaseClass\IGameSystem.cs" />
      <Compile Include="Assets\Scripts\CampSystem\CampSystem.cs" />
+     <Compile Include="Assets\Scripts\CharacterSystem\Attr\AttrStrategy\EnemyAttrStrategy.cs" />
+     <Compile Include="Assets\Scripts\CharacterSystem\Attr\AttrStrategy\IAttrStrategy.cs" />
+     <Compile Include="Assets\Scripts\CharacterSystem\Attr\AttrStrategy\SoldierAttrStrategy.cs" />
+     <Compile Include="Assets\Scripts\CharacterSystem\Attr\EnemyAttr.cs" />
+     <Compile Include="Assets\Scripts\CharacterSystem\Attr\ICharacterAttr.cs" />
+     <Compile Include="Assets\Scripts\CharacterSystem\Attr\SoldierAttr.cs" />
      <Compile Include="Assets\Scripts\CharacterSystem\CharacterSystem.cs" />
+     <Compile Include="Assets\Scripts\CharacterSystem\Enemy\EnemyElf.cs" />
+     <Compile Include="Assets\Scripts\CharacterSystem\Enemy\EnemyOgre.cs" />
+     <Compile Include="Assets\Scripts\CharacterSystem\Enemy\EnemyTroll.cs" />
+     <Compile Include="Assets\Scripts\CharacterSystem\Enemy\IEnemy.cs" />
+     <Compile Include="Assets\Scripts\CharacterSystem\EnemyAI\EnemyAttackState.cs" />
+     <Compile Include="Assets\Scripts\CharacterSystem\EnemyAI\EnemyChaseState.cs" />
+     <Compile Include="Assets\Scripts\CharacterSystem\EnemyAI\EnemyFSMSystem.cs" />
+     <Compile Include="Assets\Scripts\CharacterSystem\EnemyAI\IEnemyState.cs" />
      <Compile Include="Assets\Scripts\CharacterSystem\ICharacter.cs" />
+     <Compile Include="Assets\Scripts\CharacterSystem\Soldier\ISoldier.cs" />
+     <Compile Include="Assets\Scripts\CharacterSystem\Soldier\SoldierCaptain.cs" />
+     <Compile Include="Assets\Scripts\CharacterSystem\Soldier\SoldierRookie.cs" />
+     <Compile Include="Assets\Scripts\CharacterSystem\Soldier\SoldierSergeant.cs" />
+     <Compile Include="Assets\Scripts\CharacterSystem\SoldierAI\ISoldierState.cs" />
+     <Compile Include="Assets\Scripts\CharacterSystem\SoldierAI\SoldierAttackState.cs" />
+     <Compile Include="Assets\Scripts\CharacterSystem\SoldierAI\SoldierChaseState.cs" />
+     <Compile Include="Assets\Scripts\CharacterSystem\SoldierAI\SoldierFSMSystem.cs" />
+     <Compile Include="Assets\Scripts\CharacterSystem\SoldierAI\SoldierIdleState.cs" />
      <Compile Include="Assets\Scripts\EnergySystem\EnergySystem.cs" />
      <Compile Include="Assets\Scripts\GameEventSystem\GameEventSystem.cs" />
      <Compile Include="Assets\Scripts\GameFacade.cs" />
@@ -62,6 +86,11 @@
      <Compile Include="Assets\Scripts\UISystem\GamePauseUI.cs" />
      <Compile Include="Assets\Scripts\UISystem\GameStateInfoUI.cs" />
      <Compile Include="Assets\Scripts\UISystem\SoldierInfoUI.cs" />
+     <Compile Include="Assets\Scripts\Weapon\IWeapon.cs" />
+     <Compile Include="Assets\Scripts\Weapon\WeaponGun.cs" />
+     <Compile Include="Assets\Scripts\Weapon\WeaponLaser.cs" />
+     <Compile Include="Assets\Scripts\Weapon\WeaponRifle.cs" />
+     <Compile Include="Assets\Scripts\Weapon\WeaponRocket.cs" />
      <Compile Include="Assets\Scripts\sceneState\BattleState.cs" />
      <Compile Include="Assets\Scripts\sceneState\ISceneState.cs" />
      <Compile Include="Assets\Scripts\sceneState\MainMenuState.cs" />

@@ -81,4 +81,9 @@ public class GameFacade {
         _gamePauseUI.Release();
         _soldierInfoUI.Release();
     }
+
+    public Vector3 GetEnemyTargetPosition()
+    {
+        return Vector3.zero;
+    }
 }

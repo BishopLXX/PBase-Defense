@@ -4,14 +4,42 @@ using UnityEngine;
 using UnityEngine.AI;
 
 public abstract class ICharacter {
-    protected string _name;
-    protected int _maxHP;
-    protected float _moveSpeed;
 
-    protected int _currentHP;
+    protected ICharacterAttr _attr;
     protected GameObject _gameObject;
     protected NavMeshAgent _navMeshAgent;
     protected AudioSource _audioSource;
+    protected Animation _anim;
+    protected IWeapon _weapon;
 
-    protected string _IconSprite;
+    public IWeapon weapon { set { _weapon = value; } }
+    public Vector3 position {
+        get
+        {
+            if (_gameObject == null)
+            {
+                Debug.LogWarning("_gameObject is null");
+                return Vector3.zero;
+            }
+            return _gameObject.transform.position;
+        }
+    }
+
+    public float atkRange { get { return _weapon.atkRange; } }
+
+    public void Attack(ICharacter target)
+    {
+        //TODO
+        _weapon.Fire(target.position);
+    }
+
+    public void PlayAnim(string animName)
+    {
+        _anim.CrossFade(animName);
+    }
+
+    public void MoveTo(Vector3 targetPosition)
+    {
+        _navMeshAgent.SetDestination(targetPosition);
+    }
 }
